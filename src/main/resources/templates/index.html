@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>测试首页</title>
+</head>
+<body>
+<div>恭喜成功进入首页</div>
+<ul th:each="item : ${users}">
+    <li th:each="entry : ${item}" th:text="${entry.key}"></li>
+    <li th:each="entry : ${item}" th:text="${entry.value}"></li>
+</ul>
+<input type="text" th:value="${i}"/>
+</body>
+</html>

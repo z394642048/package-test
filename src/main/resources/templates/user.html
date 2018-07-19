@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>测试首页</title>
+</head>
+<body>
+<div>查询当前用户信息</div>
+<input type="text" th:value="${i}"/>
+<input type="text" th:value="${user['id']}"/>
+<input type="text" th:value="${user['name']}"/>
+<input type="text" th:value="${user['password']}"/>
+</body>
+</html>
